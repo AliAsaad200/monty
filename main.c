@@ -1,5 +1,5 @@
 #include "monty.h"
-stack_t *head = NULL;
+stack_s *head = NULL;
 
 /**
  * main - entry point
@@ -25,11 +25,11 @@ int main(int argc, char *argv[])
  * @n: Number to go inside the node.
  * Return: Upon sucess a pointer to the node. Otherwise NULL.
  */
-stack_t *create_node(int n)
+stack_s *create_node(int n)
 {
-	stack_t *node;
+	stack_s *node;
 
-	node = malloc(sizeof(stack_t));
+	node = malloc(sizeof(stack_s));
 	if (node == NULL)
 		err(4);
 	node->next = NULL;
@@ -43,7 +43,7 @@ stack_t *create_node(int n)
  */
 void free_nodes(void)
 {
-	stack_t *tmp;
+	stack_s *tmp;
 
 	if (head == NULL)
 		return;
@@ -58,13 +58,13 @@ void free_nodes(void)
 
 
 /**
- * add_to_queue - Adds a node to the queue.
+ * Add_Node - Adds a node to the queue.
  * @new_node: Pointer to the new node.
  * @ln: line number of the opcode.
  */
-void add_to_queue(stack_t **new_node, __attribute__((unused))unsigned int ln)
+void Add_Node(stack_s **new_node, __attribute__((unused))unsigned int ln)
 {
-	stack_t *tmp;
+	stack_s *tmp;
 
 	if (new_node == NULL || *new_node == NULL)
 		exit(EXIT_FAILURE);
