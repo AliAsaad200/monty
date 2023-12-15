@@ -10,6 +10,7 @@
 #include <stdarg.h>
 
 /**
+ * Stack declaration
  * struct stack_s - doubly linked list representation of a stack (or queue)
  * @n: integer
  * @prev: points to the previous element of the stack (or queue)
@@ -27,10 +28,9 @@ typedef struct stack_s
 
 /**
  * struct instruction_s - opcode and its function
- * @opcode: the opcode
- * @f: function to handle the opcode
- *
- * Description: opcode and its function
+ * @opcode: 
+ * @f: 
+ * Talking about operating Codes
  * for stack, queues, LIFO, FIFO
  */
 typedef struct instruction_s
@@ -42,24 +42,24 @@ typedef struct instruction_s
 extern stack_t *head;
 typedef void (*op_func)(stack_t **, unsigned int);
 
-/*file operations*/
+
 void open_file(char *file_name);
 int parse_line(char *buffer, int line_number, int format);
 void read_file(FILE *);
 int len_chars(FILE *);
 void find_func(char *, char *, int, int);
 
-/*Stack operations*/
+/*Stack main functions*/
 stack_t *create_node(int n);
 void free_nodes(void);
 void print_stack(stack_t **, unsigned int);
-void add_to_stack(stack_t **, unsigned int);
-void Add_Node(stack_t **, unsigned int);
+void Add_Stack_Node(stack_t **, unsigned int);
+void Add_Queue_Node(stack_t **, unsigned int);
 
 void call_fun(op_func, char *, char *, int, int);
 
 void print_top(stack_t **, unsigned int);
-void pop_top(stack_t **, unsigned int);
+void pop(stack_t **, unsigned int);
 void nop(stack_t **, unsigned int);
 void swap_nodes(stack_t **, unsigned int);
 

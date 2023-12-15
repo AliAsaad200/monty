@@ -58,11 +58,11 @@ void free_nodes(void)
 
 
 /**
- * Add_Node - Adds a node to the queue.
+ * Add_Queue_Node - Adds a node to the queue.
  * @node: Pointer to the new node.
  * @ln: line number of the opcode.
  */
-void Add_Node(stack_t **node, __attribute__((unused))unsigned int ln)
+void Add_Queue_Node(stack_t **node, __attribute__((unused))unsigned int ln)
 {
 	stack_t *tmp;
 
