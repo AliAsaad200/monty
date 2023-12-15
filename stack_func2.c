@@ -34,11 +34,11 @@ void swap_nodes(stack_t **stack, unsigned int line_number)
 }
 
 /**
- * add_nodes - Adds the top two elements of the stack.
+ * add_nodes_extra - Adds the top two elements of the stack.
  * @stack: Pointer to a pointer pointing to top node of the stack.
  * @line_number: Interger representing the line number of of the opcode.
  */
-void add_nodes(stack_t **stack, unsigned int line_number)
+void add_nodes_extra(stack_t **stack, unsigned int line_number)
 {
 	int sum;
 

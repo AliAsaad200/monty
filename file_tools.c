@@ -91,7 +91,7 @@ void find_func(char *opcode, char *value, int ln, int format)
 		{"pop", pop},
 		{"nop", nop},
 		{"swap", swap_nodes},
-		{"add", add_nodes},
+		{"add", add_nodes_extra},
 		{NULL, NULL}
 	};
 
