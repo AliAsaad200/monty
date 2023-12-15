@@ -65,10 +65,6 @@ void swap_nodes(stack_t **, unsigned int);
 
 /*Math operations with nodes*/
 void add_nodes(stack_t **, unsigned int);
-void sub_nodes(stack_t **, unsigned int);
-void div_nodes(stack_t **, unsigned int);
-void mul_nodes(stack_t **, unsigned int);
-void mod_nodes(stack_t **, unsigned int);
 
 /*String operations*/
 void print_char(stack_t **, unsigned int);
